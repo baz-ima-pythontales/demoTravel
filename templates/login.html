@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+
+     <form action="login" method="POST"enctype="multipart/form-data">
+  {% csrf_token %}
+<!--    <label for="username"><b>Enter username</b></label>-->
+<!--    <input type="text" name="username" placeholder="Enter ur username"><br><br>-->
+    <label><b>Enter username</b></label>
+    <input type="text" name="username" placeholder="Enter ur username"><br><br>
+    <label><b>Password</b></label>
+    <input type="password" name="password" placeholder="Enter ur password"><br><br>
+<!--    <label for="password"><b>Password</b></label>-->
+<!--    <input type="password" name="password" placeholder="Enter ur password"><br><br>-->
+    <button type="submit" ><strong>Login</strong></button>
+</form>
+</body>
+</html>
